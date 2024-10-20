@@ -185,5 +185,43 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			    <!-- Other parts of your HTML -->
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Visitor Counter Script -->
+    <script>
+        // Check if the counter exists in local storage
+        if (localStorage.getItem('page_view')) {
+            // If it exists, increment the count
+            localStorage.setItem('page_view', Number(localStorage.getItem('page_view')) + 1);
+        } else {
+            // If it doesn't exist, initialize the counter to 1
+            localStorage.setItem('page_view', 1);
+        }
+
+        // Display the visitor count on the page
+        document.addEventListener("DOMContentLoaded", function() {
+            var counterElement = document.createElement("div");
+            counterElement.style.fontSize = "1.2em";
+            counterElement.style.marginTop = "10px";
+            counterElement.style.textAlign = "center";
+            counterElement.innerHTML = "This page has been visited " + localStorage.getItem('page_view') + " times on this device.";
+            document.body.appendChild(counterElement);
+        });
+    </script>
+
+</body>
+</html>
+
+
+		
 	</body>
 </html>
