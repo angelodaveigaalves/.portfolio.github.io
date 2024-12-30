@@ -11,6 +11,10 @@
 				max-width: 400px; /* Slightly larger width for articles */
 				margin: 20px auto; /* Center articles and add spacing */
 				text-align: center; /* Center-align text */
+				background: white; /* Ensure white background for articles */
+				padding: 20px; /* Add padding for better spacing */
+				border-radius: 10px; /* Add rounded corners for a modern look */
+				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 			}
 			article .image.fit img {
 				max-height: 200px; /* Slightly larger images */
@@ -30,18 +34,27 @@
 				padding: 8px 15px; /* Slightly larger buttons */
 				font-size: 0.9em; /* Increase button font size */
 			}
-			/* Adjust contact section */
-			.split.contact section {
-				text-align: center;
-				margin-bottom: 15px; /* Add more spacing between contact items */
+			/* Contact Section Styling */
+			.split.contact {
+				background: white; /* Add white background to contact section */
+				border-radius: 10px; /* Rounded corners for a cohesive design */
+				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+				padding: 20px; /* Add padding for better spacing */
+				max-width: 600px; /* Limit the width to keep it centered */
+				margin: 30px auto; /* Center horizontally with space above and below */
 			}
-			/* Center content vertically and horizontally */
-			#main {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center; /* Horizontally center articles */
-				align-items: center; /* Vertically center articles */
-				min-height: 100vh; /* Ensure the section takes full viewport height */
+			.split.contact h3 {
+				font-size: 1.2em; /* Slightly larger headings */
+				margin-bottom: 10px; /* Add space below headings */
+			}
+			.split.contact p,
+			.split.contact a {
+				font-size: 1em; /* Increase font size for readability */
+				color: #333; /* Neutral text color */
+			}
+			.split.contact ul.icons.alt li a {
+				color: #0077b5; /* LinkedIn blue for icons */
+				margin: 0 10px; /* Add spacing between icons */
 			}
 		</style>
 	</head>
@@ -116,57 +129,47 @@
 						<li><a href="https://github.com/angelodaveigaalves/pi" class="button">Project</a></li>
 					</ul>
 				</article>
-			</section>
+			</div>
 
 			<!-- Contact Section -->
-			</ul>
-								</article>
-								
-							</section>
-							
-							<section class="split contact">
-								
-								<section>
-									<h3>Phone</h3>
-									<p><a href="#">+49 15733249306</a></p>
-								</section>
-								<section>
-									<h3>Email</h3>
-									<p><a href="#">angelodva52@gmail.com</a></p>
-								</section>
-								<section>
-									<h3>Social</h3>
-									<ul class="icons alt">
-										<li><a href="https://www.linkedin.com/in/angelo-da-veiga-alves-1868702b3/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://github.com/angelodaveigaalves" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									</ul>
-								</section>
-						</section>
+			<section class="split contact">
+				<section>
+					<h3>Phone</h3>
+					<p><a href="#">+49 15733249306</a></p>
+				</section>
+				<section>
+					<h3>Email</h3>
+					<p><a href="#">angelodva52@gmail.com</a></p>
+				</section>
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/angelo-da-veiga-alves-1868702b3/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/angelodaveigaalves" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
 
-						</footer>
-	
-					<!-- Copyright -->
-						<div id="copyright">
-							<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-						</div>
-	
+			<!-- Footer -->
+			<footer>
+				<div id="copyright">
+					<ul>
+						<li>&copy; Untitled</li>
+						<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul>
 				</div>
-						<!-- Copyright -->
-							<div id="copyright">
-								<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-							</div>
-		
-					</div>
-		
+			</footer>
+
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
