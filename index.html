@@ -7,10 +7,18 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			/* General styling for projects */
+			#main {
+				display: flex; /* Enable flexbox */
+				flex-direction: column; /* Arrange children vertically */
+				justify-content: center; /* Center vertically */
+				align-items: center; /* Center horizontally */
+				min-height: 100vh; /* Take full viewport height */
+				background: #f8f9fa; /* Subtle background color */
+			}
 			article {
 				width: 90%; /* Make the cards wider */
 				max-width: 500px; /* Set a max width to prevent them from being too large */
-				margin: 30px auto; /* Center the cards and add vertical spacing */
+				margin: 20px auto; /* Center the cards and add vertical spacing */
 				text-align: center; /* Center-align text */
 				background: white; /* White background for cards */
 				padding: 25px; /* Add more padding for better spacing */
@@ -96,7 +104,7 @@
 			<div id="main">
 				<article>
 					<header>
-						<h2><a href="https://github.com/angelodaveigaalves/titanic_eda.git">Titanic</a></h2>
+						<h2><a href="https://github.com/angelodaveigaalves/titanic_eda.git">Titanic Analysis</a></h2>
 					</header>
 					<a href="https://github.com/angelodaveigaalves/titanic_eda.git" class="image fit">
 						<img src="images/tall ships.jpg" alt="" />
